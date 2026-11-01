@@ -1,0 +1,110 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: Data/processed/REARRANGEMENT/A17_REARRANGEMENT.nex
+User tree file name: Results/IQTREE/REARRANGEMENT/A17_REARRANGEMENT.treefile
+Type of analysis: tree reconstruction
+Random seed number: 2026
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 6 sequences with 1088 binary sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 113
+Number of distinct site patterns: 21
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR2+FO+ASC+R2
+
+Rate parameter R:
+
+  0-1: 1.0000
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(0) = 0.99
+  pi(1) = 0.01004
+
+Rate matrix Q:
+
+  0   -0.5051    0.5051
+  1     49.82    -49.82
+
+Model of rate heterogeneity: FreeRate with 2 categories
+Site proportion and rates:  (0.8159,0.02547) (0.1841,5.32)
+
+ Category  Relative_rate  Proportion
+  1         0.02547        0.8159
+  2         5.32           0.1841
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -2211.6688 (s.e. 44.9139)
+Unconstrained log-likelihood (without tree): -1583.0680
+Number of free parameters (#branches + #model parameters): 12
+Akaike information criterion (AIC) score: 4447.3376
+Corrected Akaike information criterion (AICc) score: 4447.6279
+Bayesian information criterion (BIC) score: 4507.2428
+
+Total tree length (sum of branch lengths): 3.2034
+Sum of internal branch lengths: 0.0052 (0.1618% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0009) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'A17-A' is drawn at root
+
++--A17-A
+| (70)
+|        +**A17-C
+|     +**| (38.7)
+|     |  +----------------------------------------------------------Normal
+|  +--| (9/0)
+|  |  +**A17-F
++--| (39/100)
+|  +--A17-E
+|
++--A17-D
+
+Tree in newick format:
+
+(A17-A:0.0067402973,(((A17-C:0.0000007851,Normal:3.1825599078)38.7:0.0003971822,A17-F:0.0006439148)9/0:0.0023791527,A17-E:0.0069551973)39/100:0.0024077002,A17-D:0.0012899082)70;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Results/SCF/REARRANGEMENT/A17_REARRANGEMENT.treefile -m "GTR2+FO{0.989964,0.0100365}+ASC+R2{0.81594,0.0254743,0.18406,5.32008}" --length 1088
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/processed/REARRANGEMENT/A17_REARRANGEMENT.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/processed/REARRANGEMENT/A17_REARRANGEMENT.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Nov  1 20:26:05 2026
+Total CPU time used: 0.027514 seconds (0h:0m:0s)
+Total wall-clock time used: 0.0329409 seconds (0h:0m:0s)
+

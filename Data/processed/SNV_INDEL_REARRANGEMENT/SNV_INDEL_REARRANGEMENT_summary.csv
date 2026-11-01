@@ -1,0 +1,7 @@
+patient,tumor_samples,snv_count,indel_count,rearrangement_count,total_sites,variable_sites,informative_sites
+A10,4,101,10,898,1009,682,274
+A17,5,208,9,1088,1305,487,110
+A21,9,91,7,902,1000,576,181
+A24,4,65,5,451,521,219,21
+A31,5,65,2,237,304,121,10
+A34,4,333,25,632,990,768,207

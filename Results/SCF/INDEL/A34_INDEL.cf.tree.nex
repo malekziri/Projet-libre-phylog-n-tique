@@ -1,0 +1,5 @@
+#NEXUS
+[ See Results/SCF/INDEL/A34_INDEL.cf.stat for branch annotation meanings. This file is best viewed in FigTree. ]
+begin trees;
+  tree tree_1 = (A34-A:0.0179386907,(A34-C:0.0000022723,A34-D:0.0299707177):0.0373609213[&label="97",sCF="89.43",sCF/sDF1/sDF2="89.43/10.57/0",sCF_N="6",sCF_N/sDF1_N/sDF2_N="6/0.74/0",sDF1="10.57",sDF1_N="0.74",sDF2="0",sDF2_N="0",sN="6.74"],(A34-E:0.0115508497,Normal:0.0372769685):0.0254059246[&sCF="100",sCF/sDF1/sDF2="100/0/0",sCF_N="4",sCF_N/sDF1_N/sDF2_N="4/0/0",sDF1="0",sDF1_N="0",sDF2="0",sDF2_N="0",sN="4"]);
+end;

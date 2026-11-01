@@ -1,0 +1,190 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: Data/processed/SNV_INDEL_REARRANGEMENT/A21_SNV_INDEL_REARRANGEMENT.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 2026
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 10 sequences with 1000 binary sites
+Number of constant sites: 2 (= 0.2% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 2 (= 0.2% of all sites)
+Number of parsimony informative sites: 207
+Number of distinct site patterns: 48
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR2+FO
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR2+FO           -3511.812    7059.623 +    0.483    7060.321 +    0.497    7147.963 +    0.939
+GTR2+FO+I         -3511.813    7061.625 +    0.178    7062.401 +    0.176    7154.873 -   0.0297
+GTR2+FO+G4        -3511.830    7061.660 +    0.174    7062.436 +    0.173    7154.907 -   0.0292
+GTR2+FO+R2        -3511.821    7063.642 +   0.0648    7064.500 +   0.0615    7161.797 - 0.000931
+GTR2+FO+I+G4      -3511.830    7063.660 +   0.0642    7064.518 +    0.061    7161.815 - 0.000922
+GTR2+FO+I+R2      -3511.818    7065.636 -   0.0239    7066.581 -   0.0217    7168.699 - 2.95e-05
+GTR2+FO+R3        -3511.815    7067.630 -  0.00882    7068.666 -  0.00766    7175.601 - 9.36e-07
+GTR2+FO+I+R3      -3511.813    7069.626 -  0.00325    7070.757 -  0.00269    7182.504 - 2.97e-08
+JC2+FQ            -3565.224    7164.449 - 8.35e-24    7165.072 - 8.91e-24    7247.881 - 1.89e-22
+JC2+FQ+I          -3565.225    7166.451 - 3.07e-24    7167.148 - 3.16e-24    7254.790 - 5.96e-24
+JC2+FQ+G4         -3565.318    7166.636 -  2.8e-24    7167.334 - 2.88e-24    7254.976 - 5.44e-24
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR2+FO
+
+Rate parameter R:
+
+  0-1: 1.0000
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(0) = 0.5999
+  pi(1) = 0.4001
+
+Rate matrix Q:
+
+  0   -0.8334    0.8334
+  1      1.25     -1.25
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3511.8117 (s.e. 47.6188)
+Unconstrained log-likelihood (without tree): -2167.4627
+Number of free parameters (#branches + #model parameters): 18
+Akaike information criterion (AIC) score: 7059.6235
+Corrected Akaike information criterion (AICc) score: 7060.3207
+Bayesian information criterion (BIC) score: 7147.9631
+
+Total tree length (sum of branch lengths): 10.4442
+Sum of internal branch lengths: 0.1668 (1.5967% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0010) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Normal' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+         +--A21-A
+      +--| (81)
+      |  |     +--A21-C
+      |  |  +--| (100)
+      |  |  |  |  +--A21-E
+      |  |  |  +--| (56)
+      |  |  |     |  +--A21-G
+      |  |  |     +--| (89)
+      |  |  |        +--A21-H
+      |  +--| (88)
+      |     +--A21-D
+   +--| (44)
+   |  +--A21-J
++**| (21)
+|  +--A21-I
+|
++--A21-F
+|
++-----------------------------------------------------------Normal
+
+Tree in newick format:
+
+((((A21-A:0.0618457835,((A21-C:0.0063043437,(A21-E:0.0082211586,(A21-G:0.0091821826,A21-H:0.0057665751)89:0.0037699580)56:0.0013587001)100:0.0845899225,A21-D:0.0462355675)88:0.0094114228)81:0.0534219645,A21-J:0.0534728702)44:0.0142091154,A21-I:0.1030017620)21:0.0000011207,A21-F:0.2351742954,Normal:9.7482110504);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3511.811741
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+      +--A21-A
+   +--| (81)
+   |  |     +--A21-C
+   |  |  +--| (100)
+   |  |  |  |  +--A21-E
+   |  |  |  +--| (56)
+   |  |  |     |  +--A21-G
+   |  |  |     +--| (89)
+   |  |  |        +--A21-H
+   |  +--| (88)
+   |     +--A21-D
++--| (44)
+|  +--A21-J
+|
+|  +--A21-F
++--| (50)
+|  +--A21-I
+|
++-----------------------------------------------------------Normal
+
+
+Consensus tree in newick format: 
+
+(((A21-A:0.0618453429,((A21-C:0.0063039467,(A21-E:0.0082213734,(A21-G:0.0091825065,A21-H:0.0057661629)89:0.0037701283)56:0.0013589949)100:0.0845885098,A21-D:0.0462316354)88:0.0094119687)81:0.0534238831,A21-J:0.0534762090)44:0.0008963529,(A21-F:0.2351862972,A21-I:0.1030162985)50:0.0132909453,Normal:9.7717201824);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Results/IQTREE/SNV_INDEL_REARRANGEMENT/A21_SNV_INDEL_REARRANGEMENT.treefile -m "GTR2+FO{0.59994,0.40006}" --length 1000
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/processed/SNV_INDEL_REARRANGEMENT/A21_SNV_INDEL_REARRANGEMENT.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/processed/SNV_INDEL_REARRANGEMENT/A21_SNV_INDEL_REARRANGEMENT.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Nov  1 20:18:06 2026
+Total CPU time used: 0.495828 seconds (0h:0m:0s)
+Total wall-clock time used: 0.5153009892 seconds (0h:0m:0s)
+

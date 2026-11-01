@@ -1,0 +1,55 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -te Results/IQTREE/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.treefile -s Data/processed/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.nex -st BIN -m JC2+FQ --scfl 100 -T 1 -seed 2026 --prefix Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:26:05 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 6 sequences with 304 columns, 18 distinct patterns
+18 parsimony-informative, 285 singleton sites, 1 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.69277e-05 secs using 76.8% CPU
+   1  A31-A     0.00%    failed      0.58%
+   2  A31-C     0.00%    failed      0.00%
+   3  A31-D     0.00%    failed      2.97%
+   4  A31-E     0.00%    failed      0.83%
+   5  A31-F     0.00%    failed      2.97%
+   6  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  6 sequences failed composition chi2 test (p-value<5%; df=1)
+Reading input tree file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.treefile ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -758.744
+Optimal log-likelihood: -758.744
+State frequencies:  0: 0.500  1: 0.500
+Parameters optimization took 1 rounds (0.000 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -758.744
+Total tree length: 10.625
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.009 sec (0h:0m:0s)
+Total wall-clock time used: 0.010 sec (0h:0m:0s)
+Computing site concordance factor using likelihood...
+0.000 sec
+Tree with site concordance factors written to Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.cf.tree
+Annotated tree (best viewed in FigTree) written to Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.cf.tree.nex
+Tree with branch IDs written to Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.cf.branch
+Concordance factors per branch printed to Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.cf.stat
+
+Analysis results written to: 
+  IQ-TREE report:                Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.treefile
+  Screen log file:               Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:26:05 2026

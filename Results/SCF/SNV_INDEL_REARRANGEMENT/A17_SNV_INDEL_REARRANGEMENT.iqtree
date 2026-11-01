@@ -1,0 +1,106 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: Data/processed/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.nex
+User tree file name: Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.treefile
+Type of analysis: tree reconstruction
+Random seed number: 2026
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 6 sequences with 1305 binary sites
+Number of constant sites: 1 (= 0.0766284% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1 (= 0.0766284% of all sites)
+Number of parsimony informative sites: 130
+Number of distinct site patterns: 22
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR2+FO
+
+Rate parameter R:
+
+  0-1: 1.0000
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(0) = 0.5408
+  pi(1) = 0.4592
+
+Rate matrix Q:
+
+  0   -0.9246    0.9246
+  1     1.089    -1.089
+
+Model of rate heterogeneity: Uniform
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3622.8069 (s.e. 46.5664)
+Unconstrained log-likelihood (without tree): -1895.1206
+Number of free parameters (#branches + #model parameters): 10
+Akaike information criterion (AIC) score: 7265.6137
+Corrected Akaike information criterion (AICc) score: 7265.7837
+Bayesian information criterion (BIC) score: 7317.3533
+
+Total tree length (sum of branch lengths): 10.4585
+Sum of internal branch lengths: 0.0664 (0.6346% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'A17-A' is drawn at root
+
++--A17-A
+| (14)
+|     +--A17-C
+|  +--| (75/92.4)
+|  |  +--A17-F
++--| (39/49.5)
+|  +--A17-D
+|
+|  +--A17-E
++**| (40.4)
+   +----------------------------------------------------------Normal
+
+Tree in newick format:
+
+(A17-A:0.1083652871,((A17-C:0.0159727417,A17-F:0.0253705685)75/92.4:0.0494082461,A17-D:0.1349204451)39/49.5:0.0169554744,(A17-E:0.0926694104,Normal:10.0148184893)40.4:0.0000014827)14;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Results/SCF/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.treefile -m "GTR2+FO{0.540767,0.459233}" --length 1305
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/processed/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/processed/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Nov  1 20:26:05 2026
+Total CPU time used: 0.014759 seconds (0h:0m:0s)
+Total wall-clock time used: 0.02069 seconds (0h:0m:0s)
+

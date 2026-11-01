@@ -1,0 +1,185 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -s Data/processed/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.nex -st BIN -keep-ident -m MFP -o Normal -B 1000 -T 1 -seed 2026 --prefix Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:18:06 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 5 sequences with 521 columns, 13 distinct patterns
+74 parsimony-informative, 447 singleton sites, 0 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.50204e-05 secs using 73.23% CPU
+   1  A24-A     0.00%    failed      0.00%
+   2  A24-C     0.00%    failed      0.00%
+   3  A24-D     0.00%    failed      0.00%
+   4  A24-E     0.00%    failed      0.01%
+   5  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  5 sequences failed composition chi2 test (p-value<5%; df=1)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.000 seconds, parsimony score: 537 (based on 521 sites)
+Perform fast likelihood tree search using GTR2+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -1089.717
+2. Current log-likelihood: -1088.431
+3. Current log-likelihood: -1086.851
+4. Current log-likelihood: -1085.310
+5. Current log-likelihood: -1083.834
+6. Current log-likelihood: -1082.415
+7. Current log-likelihood: -1081.012
+8. Current log-likelihood: -1079.554
+9. Current log-likelihood: -1077.946
+10. Current log-likelihood: -1076.107
+11. Current log-likelihood: -1074.016
+12. Current log-likelihood: -1071.692
+13. Current log-likelihood: -1069.227
+14. Current log-likelihood: -1066.782
+15. Current log-likelihood: -1064.402
+16. Current log-likelihood: -1061.996
+17. Current log-likelihood: -1060.249
+Optimal log-likelihood: -1059.879
+State frequencies:  0: 0.956  1: 0.044
+Gamma shape alpha: 0.173
+Parameters optimization took 17 rounds (0.004 sec)
+Time for fast ML tree search: 0.005 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 44 binary models (sample size: 521 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR2+FO       1369.718     8   2755.436     2755.717     2789.482
+  2  GTR2+FO+ASC   1080.850     8   2177.700     2177.981     2211.746
+  3  GTR2+FO+G4    1369.722     9   2757.444     2757.796     2795.746
+  4  GTR2+FO+ASC+G4 1056.840     9   2131.681     2132.033     2169.982
+  5  GTR2+FO+R2    1369.722     10  2759.445     2759.876     2802.002
+  6  GTR2+FO+R3    1369.720     12  2763.440     2764.054     2814.509
+ 14  GTR2+FO+ASC+R2 1050.758     10  2121.516     2121.947     2164.073
++R3 reinitialized from +R2 with factor 0.500
+ 15  GTR2+FO+ASC+R3 1049.779     12  2123.558     2124.172     2174.627
+ 23  JC2+FQ        1373.582     7   2761.164     2761.382     2790.954
+ 24  JC2+FQ+ASC    1110.491     7   2234.983     2235.201     2264.773
+ 25  JC2+FQ+G4     1373.582     8   2763.164     2763.445     2797.210
+ 26  JC2+FQ+ASC+G4 1110.357     8   2236.715     2236.996     2270.761
+ 36  JC2+FQ+ASC+R2 1106.295     9   2230.591     2230.943     2268.893
++R3 reinitialized from +R2 with factor 0.500
+ 37  JC2+FQ+ASC+R3 1105.173     11  2232.346     2232.864     2279.159
+Akaike Information Criterion:           GTR2+FO+ASC+R2
+Corrected Akaike Information Criterion: GTR2+FO+ASC+R2
+Bayesian Information Criterion:         GTR2+FO+ASC+R2
+Best-fit model: GTR2+FO+ASC+R2 chosen according to BIC
+
+All model information printed to Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.model.gz
+CPU time for ModelFinder: 0.036 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.041 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 2026)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -1089.400
+2. Current log-likelihood: -1082.028
+3. Current log-likelihood: -1079.195
+4. Current log-likelihood: -1078.285
+5. Current log-likelihood: -1078.115
+6. Current log-likelihood: -1078.014
+Optimal log-likelihood: -1077.922
+State frequencies:  0: 0.982  1: 0.018
+Site proportion and rates:  (0.998,0.689) (0.002,125.582)
+Parameters optimization took 6 rounds (0.001 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 3.19481e-05 secs using 93.9% CPU
+Computing ML distances took 0.000061 sec (of wall-clock time) 0.000050 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 1.28746e-05 secs using 93.21% CPU
+Computing RapidNJ tree took 0.000047 sec (of wall-clock time) 0.000032 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -1081.350
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.016 second
+Computing log-likelihood of 3 initial trees ... 0.000 seconds
+Current best score: -1077.922
+
+Do NNI search on 5 best initial trees
+Finish initializing candidate tree set (8)
+Current best tree score: -1077.922 / CPU time: 0.021
+Number of iterations: 5
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 10 / LogL: -1078.535 / Time: 0h:0m:0s
+Iteration 20 / LogL: -1078.529 / Time: 0h:0m:0s
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -1077.824
+Iteration 30 / LogL: -1078.513 / Time: 0h:0m:0s (0h:0m:0s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -1077.760
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -1077.715
+Iteration 40 / LogL: -1077.715 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -1077.705
+Iteration 50 / LogL: -1078.484 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -1087.115
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -1077.666
+UPDATE BEST LOG-LIKELIHOOD: -1077.661
+Iteration 60 / LogL: -1077.661 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -1078.473 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -1077.655
+Iteration 80 / LogL: -1078.473 / Time: 0h:0m:0s (0h:0m:0s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -1077.629
+UPDATE BEST LOG-LIKELIHOOD: -1077.623
+UPDATE BEST LOG-LIKELIHOOD: -1077.623
+Iteration 90 / LogL: -1078.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -1078.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -1087.505
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1077.623
+Optimal log-likelihood: -1077.618
+State frequencies:  0: 0.984  1: 0.016
+Site proportion and rates:  (0.998,0.683) (0.002,127.952)
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -1077.618
+Creating bootstrap support values...
+Split supports printed to NEXUS file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.splits.nex
+Total tree length: 0.100
+
+Total number of iterations: 101
+CPU time used for tree search: 0.261 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.303 sec (0h:0m:0s)
+Total CPU time used: 0.316 sec (0h:0m:0s)
+Total wall-clock time used: 0.366 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.splits.nex...
+5 taxa and 15 splits.
+Consensus tree written to Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.contree
+Reading input trees file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.contree
+Log-likelihood of consensus tree: -1077.619
+
+Analysis results written to: 
+  IQ-TREE report:                Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.treefile
+  Likelihood distances:          Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.splits.nex
+  Consensus tree:                Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.contree
+  Screen log file:               Results/IQTREE/SNV_INDEL_REARRANGEMENT/A24_SNV_INDEL_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:18:07 2026

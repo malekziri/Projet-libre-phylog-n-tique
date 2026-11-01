@@ -1,0 +1,5 @@
+#NEXUS
+[ See Results/SCF/INDEL/A24_INDEL.cf.stat for branch annotation meanings. This file is best viewed in FigTree. ]
+begin trees;
+  tree tree_1 = (A24-A:0.0000020000,A24-C:0.0000010000,Normal:10.0000000000);
+end;

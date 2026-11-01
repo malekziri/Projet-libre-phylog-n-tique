@@ -1,0 +1,5 @@
+#NEXUS
+[ See Results/SCF/SNV/A10_SNV.cf.stat for branch annotation meanings. This file is best viewed in FigTree. ]
+begin trees;
+  tree tree_1 = (A10-A:0.0000014228,((A10-C:0.0927727051,A10-D:0.1110476920):0.3968817659[&label="60",sCF="85",sCF/sDF1/sDF2="85/10/5",sCF_N="17",sCF_N/sDF1_N/sDF2_N="17/2/1",sDF1="10",sDF1_N="2",sDF2="5",sDF2_N="1",sN="20"],Normal:12.8880436321):0.0000559137[&sCF="45.45",sCF/sDF1/sDF2="45.45/53.83/0.73",sCF_N="2.7",sCF_N/sDF1_N/sDF2_N="2.7/2.98/0.16",sDF1="53.83",sDF1_N="2.98",sDF2="0.73",sDF2_N="0.16",sN="5.84"],A10-E:0.3297935190);
+end;

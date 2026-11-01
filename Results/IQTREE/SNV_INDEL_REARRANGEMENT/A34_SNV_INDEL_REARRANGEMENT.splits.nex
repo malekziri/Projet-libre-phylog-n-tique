@@ -1,0 +1,27 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=5;
+TAXLABELS
+[1] 'A34-A'
+[2] 'A34-C'
+[3] 'A34-D'
+[4] 'A34-E'
+[5] 'Normal'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=5 nsplits=7;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 1,
+	100	 2,
+	100	 3,
+	100	 2 3,
+	100	 4 5,
+	100	 5,
+	100	 4,
+;
+END; [Splits]
+

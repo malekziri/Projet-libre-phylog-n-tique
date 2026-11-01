@@ -1,0 +1,14 @@
+#NEXUS
+
+BEGIN DATA;
+    DIMENSIONS NTAX=6 NCHAR=2;
+    FORMAT DATATYPE=STANDARD SYMBOLS="01";
+    MATRIX
+    A31-A    01
+    A31-C    11
+    A31-D    01
+    A31-E    01
+    A31-F    01
+    Normal    00
+    ;
+END;

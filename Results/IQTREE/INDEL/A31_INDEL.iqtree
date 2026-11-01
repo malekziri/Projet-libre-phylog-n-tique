@@ -1,0 +1,207 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: Data/processed/INDEL/A31_INDEL.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 2026
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 6 sequences with 2 binary sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 0
+Number of distinct site patterns: 2
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JC2+FQ+ASC
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+JC2+FQ+ASC           -2.927      23.854 +    0.365     203.854 +    0.774      12.092 +    0.178
+JC2+FQ+ASC+G4        -2.891      25.781 +    0.139     245.781 - 6.09e-10      12.712 +    0.131
+GTR2+FO+ASC          -2.892      25.784 +    0.139     245.784 - 6.08e-10      12.716 +    0.131
+JC2+FQ+ASC+R2        -2.861      27.722 +   0.0528     291.722 - 6.44e-20      13.346 +   0.0952
+GTR2+FO+ASC+G4       -2.892      27.784 +   0.0512     291.784 - 6.24e-20      13.409 +   0.0923
+GTR2+FO+ASC+R2       -2.856      29.712 -   0.0195     341.712 - 8.98e-31      14.030 +   0.0677
+JC2+FQ               -4.159      26.318 +    0.107     206.318 +    0.226      14.556 +    0.052
+JC2+FQ+ASC+R3        -2.792      31.585 -  0.00766     395.585 -  1.8e-42      14.596 +    0.051
+JC2+FQ+G4            -4.159      28.318 -   0.0392     248.318 - 1.71e-10      15.249 -   0.0368
+GTR2+FO              -4.159      28.318 -   0.0392     248.318 - 1.71e-10      15.249 -   0.0368
+GTR2+FO+ASC+R3       -2.790      33.580 -  0.00282     453.580 - 4.59e-55      15.284 -   0.0361
+JC2+FQ+R2            -4.159      30.318 -   0.0144     294.318 - 1.76e-20      15.942 -    0.026
+GTR2+FO+G4           -4.159      30.318 -   0.0144     294.318 - 1.76e-20      15.943 -    0.026
+GTR2+FO+R2           -4.159      32.318 -  0.00531     344.318 - 2.44e-31      16.636 -   0.0184
+JC2+FQ+R3            -4.159      34.318 -  0.00195     398.318 - 4.59e-43      17.329 -    0.013
+GTR2+FO+R3           -4.159      36.318 - 0.000718     456.318 - 1.17e-55      18.022 -  0.00919
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: JC2+FQ+ASC
+
+Rate parameter R:
+
+  0-1: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  0        -1         1
+  1         1        -1
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2.7779 (s.e. 0.0002)
+Unconstrained log-likelihood (without tree): -1.3863
+Number of free parameters (#branches + #model parameters): 9
+Akaike information criterion (AIC) score: 23.5558
+Corrected Akaike information criterion (AICc) score: 203.5558
+Bayesian information criterion (BIC) score: 11.7941
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 9
+Sample size (n, alignment length): 2
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 0.0055
+Sum of internal branch lengths: 0.0000 (0.0000% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.5000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Normal' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+   +**A31-A
++**| (57)
+|  |  +**A31-D
+|  +**| (18)
+|     |  +**A31-E
+|     +**| (34)
+|        +**A31-F
+|
++***********************************************************A31-C
+|
++**********************************************************Normal
+
+Tree in newick format:
+
+((A31-A:0.0000010000,(A31-D:0.0000010000,(A31-E:0.0000010000,A31-F:0.0000010000)34:0.0000010000)18:0.0000010000)57:0.0000010000,A31-C:0.0027387257,Normal:0.0027382259);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2.795045
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+      +--A31-A
+   +--| (38)
+   |  |  +--A31-E
+   |  +--| (34)
+   |     +--A31-F
++--| (57)
+|  +--A31-D
+|
++----------------------------------------------------------A31-C
+|
++---------------------------------------------------------Normal
+
+
+Consensus tree in newick format: 
+
+(((A31-A:0.0000021921,(A31-E:0.0000021921,A31-F:0.0000021921)34:0.0000021921)38:0.0000021921,A31-D:0.0000021921)57:0.0000021921,A31-C:0.0219730876,Normal:0.0215153220);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Results/IQTREE/INDEL/A31_INDEL.treefile -m "JC2+FQ+ASC" --length 2
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/processed/INDEL/A31_INDEL.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/processed/INDEL/A31_INDEL.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Nov  1 20:18:00 2026
+Total CPU time used: 3.020763 seconds (0h:0m:3s)
+Total wall-clock time used: 3.263186932 seconds (0h:0m:3s)
+

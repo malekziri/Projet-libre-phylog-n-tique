@@ -1,0 +1,219 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -s Data/processed/INDEL/A17_INDEL.nex -st BIN -keep-ident -m MFP -o Normal -B 1000 -T 1 -seed 2026 --prefix Results/IQTREE/INDEL/A17_INDEL
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:17:49 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/INDEL/A17_INDEL.nex ... Nexus format detected
+Alignment has 6 sequences with 9 columns, 3 distinct patterns
+2 parsimony-informative, 7 singleton sites, 0 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.09673e-05 secs using 72.94% CPU
+   1  A17-A     0.00%    passed     54.98%
+   2  A17-C     0.00%    passed     18.82%
+   3  A17-D     0.00%    passed     18.82%
+   4  A17-E     0.00%    passed     90.48%
+   5  A17-F     0.00%    passed     18.82%
+   6  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  1 sequences failed composition chi2 test (p-value<5%; df=1)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.000 seconds, parsimony score: 9 (based on 9 sites)
+Perform fast likelihood tree search using GTR2+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -13.998
+Optimal log-likelihood: -13.984
+State frequencies:  0: 0.546  1: 0.454
+Gamma shape alpha: 998.448
+Parameters optimization took 1 rounds (0.000 sec)
+Time for fast ML tree search: 0.001 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 44 binary models (sample size: 9 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR2+FO       20.355       10  60.710       280.710      62.682
+  2  GTR2+FO+ASC   14.169       10  48.338       268.338      50.310
+  3  GTR2+FO+G4    20.355       11  62.710       326.710      64.880
+  4  GTR2+FO+ASC+G4 14.169       11  50.338       314.338      52.508
+  5  GTR2+FO+R2    20.355       12  64.710       376.710      67.077
+  6  GTR2+FO+R3    20.355       14  68.710       488.710      71.471
+ 14  GTR2+FO+ASC+R2 13.915       12  51.831       363.831      54.197
+ 15  GTR2+FO+ASC+R3 13.897       14  55.794       475.794      58.555
+ 23  JC2+FQ        20.384       9   58.767       238.767      60.542
+ 24  JC2+FQ+ASC    14.278       9   46.557       226.557      48.332
+ 25  JC2+FQ+G4     20.384       10  60.767       280.767      62.740
+ 26  JC2+FQ+ASC+G4 14.172       10  48.344       268.344      50.317
+ 27  JC2+FQ+R2     20.384       11  62.767       326.767      64.937
+ 28  JC2+FQ+R3     20.396       13  66.792       430.792      69.356
+ 36  JC2+FQ+ASC+R2 13.929       11  49.858       313.858      52.028
+ 37  JC2+FQ+ASC+R3 13.901       13  53.803       417.803      56.366
+Akaike Information Criterion:           JC2+FQ+ASC
+Corrected Akaike Information Criterion: JC2+FQ+ASC
+Bayesian Information Criterion:         JC2+FQ+ASC
+Best-fit model: JC2+FQ+ASC chosen according to BIC
+
+All model information printed to Results/IQTREE/INDEL/A17_INDEL.model.gz
+CPU time for ModelFinder: 0.014 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.015 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 2026)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -13.896
+Optimal log-likelihood: -13.899
+State frequencies:  0: 0.500  1: 0.500
+Parameters optimization took 1 rounds (0.000 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 1.81198e-05 secs using 88.3% CPU
+Computing ML distances took 0.000047 sec (of wall-clock time) 0.000036 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 1.3113e-05 secs using 83.89% CPU
+Computing RapidNJ tree took 0.000050 sec (of wall-clock time) 0.000034 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -13.930
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.011 second
+Computing log-likelihood of 22 initial trees ... 0.001 seconds
+Current best score: -13.899
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -13.899
+Iteration 10 / LogL: -14.003 / Time: 0h:0m:0s
+Iteration 20 / LogL: -14.038 / Time: 0h:0m:0s
+Finish initializing candidate tree set (8)
+Current best tree score: -13.899 / CPU time: 0.042
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 30 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 40 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 50 / LogL: -13.901 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -26.818
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 60 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 70 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 80 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 90 / LogL: -13.908 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 100 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -26.818
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.971
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 110 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 120 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 130 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 140 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 150 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -26.818
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 160 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 170 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 180 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 190 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+UPDATE BEST LOG-LIKELIHOOD: -13.899
+Iteration 200 / LogL: -13.899 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -26.818
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -13.899
+Optimal log-likelihood: -13.899
+State frequencies:  0: 0.500  1: 0.500
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -13.899
+Creating bootstrap support values...
+Split supports printed to NEXUS file Results/IQTREE/INDEL/A17_INDEL.splits.nex
+Total tree length: 0.006
+
+Total number of iterations: 200
+CPU time used for tree search: 0.540 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.563 sec (0h:0m:0s)
+Total CPU time used: 0.573 sec (0h:0m:0s)
+Total wall-clock time used: 0.600 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Results/IQTREE/INDEL/A17_INDEL.splits.nex...
+6 taxa and 23 splits.
+Consensus tree written to Results/IQTREE/INDEL/A17_INDEL.contree
+Reading input trees file Results/IQTREE/INDEL/A17_INDEL.contree
+Log-likelihood of consensus tree: -16.104
+
+Analysis results written to: 
+  IQ-TREE report:                Results/IQTREE/INDEL/A17_INDEL.iqtree
+  Maximum-likelihood tree:       Results/IQTREE/INDEL/A17_INDEL.treefile
+  Likelihood distances:          Results/IQTREE/INDEL/A17_INDEL.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Results/IQTREE/INDEL/A17_INDEL.splits.nex
+  Consensus tree:                Results/IQTREE/INDEL/A17_INDEL.contree
+  Screen log file:               Results/IQTREE/INDEL/A17_INDEL.log
+
+Date and Time: Sun Nov  1 20:17:49 2026

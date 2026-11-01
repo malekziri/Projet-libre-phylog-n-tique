@@ -1,0 +1,171 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: Data/processed/SNV/A24_SNV.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 2026
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 5 sequences with 65 binary sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 4
+Number of distinct site patterns: 5
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JC2+FQ+ASC
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+JC2+FQ+ASC         -108.474     230.948 +    0.394     232.913 +    0.515     246.169 +    0.742
+GTR2+FO+ASC        -108.263     232.526 +    0.179     235.098 +    0.173     249.921 +    0.114
+JC2+FQ+ASC+G4      -108.402     232.803 +    0.156     235.375 +     0.15     250.199 +   0.0989
+JC2+FQ+ASC+R2      -107.606     233.212 +    0.127     236.485 +   0.0864     252.781 -   0.0272
+GTR2+FO+ASC+G4     -108.242     234.484 +   0.0673     237.756 -   0.0457     254.053 -   0.0144
+GTR2+FO+ASC+R2     -107.538     235.075 +   0.0501     239.149 -   0.0228     256.819 -  0.00361
+JC2+FQ+ASC+R3      -107.503     237.007 -   0.0191     241.988 -  0.00551     260.925 - 0.000463
+GTR2+FO+ASC+R3     -107.471     238.941 -  0.00724     244.941 -  0.00126     265.034 - 5.94e-05
+JC2+FQ             -148.720     311.440 - 1.31e-18     313.405 - 1.71e-18     326.661 - 2.46e-18
+GTR2+FO            -148.610     313.220 - 5.38e-19     315.791 - 5.19e-19     330.615 - 3.41e-19
+JC2+FQ+G4          -148.721     313.443 - 4.81e-19     316.014 - 4.64e-19     330.838 - 3.05e-19
+GTR2+FO+G4         -148.611     315.222 - 1.98e-19     318.495 - 1.34e-19     334.791 - 4.23e-20
+JC2+FQ+R2          -148.720     315.441 - 1.77e-19     318.714 -  1.2e-19     335.010 - 3.79e-20
+GTR2+FO+R2         -148.610     317.220 - 7.28e-20     321.294 - 3.31e-20     338.964 - 5.25e-21
+GTR2+FO+R3         -148.610     321.220 - 9.85e-21     327.220 - 1.71e-21     347.312 - 8.08e-23
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: JC2+FQ+ASC
+
+Rate parameter R:
+
+  0-1: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  0        -1         1
+  1         1        -1
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -107.4789 (s.e. 8.4795)
+Unconstrained log-likelihood (without tree): -62.3707
+Number of free parameters (#branches + #model parameters): 7
+Akaike information criterion (AIC) score: 228.9578
+Corrected Akaike information criterion (AICc) score: 230.9227
+Bayesian information criterion (BIC) score: 244.1785
+
+Total tree length (sum of branch lengths): 0.0060
+Sum of internal branch lengths: 0.0000 (0.0000% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0154) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Normal' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+     +*******A24-A
++****| (96)
+|    |  +**A24-C
+|    +**| (37)
+|       +**A24-D
+|
++****A24-E
+|
++***********************************************************Normal
+
+Tree in newick format:
+
+((A24-A:0.0006459234,(A24-C:0.0000000167,A24-D:0.0002762863)37:0.0000000461)96:0.0003686847,A24-E:0.0003685009,Normal:0.0043683364);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -107.596087
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+     +-------A24-A
++----| (96)
+|    |  +--A24-C
+|    +--| (37)
+|       +--A24-D
+|
++----A24-E
+|
++-----------------------------------------------------------Normal
+
+
+Consensus tree in newick format: 
+
+((A24-A:0.0018133650,(A24-C:0.0000029074,A24-D:0.0007770709)37:0.0000029074)96:0.0010357236,A24-E:0.0010353671,Normal:0.0122382240);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Results/IQTREE/SNV/A24_SNV.treefile -m "JC2+FQ+ASC" --length 65
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/processed/SNV/A24_SNV.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/processed/SNV/A24_SNV.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Nov  1 20:17:46 2026
+Total CPU time used: 0.530549 seconds (0h:0m:0s)
+Total wall-clock time used: 0.6066019535 seconds (0h:0m:0s)
+

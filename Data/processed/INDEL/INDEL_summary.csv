@@ -1,0 +1,7 @@
+patient,tumor_samples,indel_count,variable_sites,informative_sites
+A10,4,10,2,1
+A17,5,9,3,2
+A21,9,7,1,0
+A24,4,5,0,0
+A31,5,2,1,0
+A34,4,25,19,7

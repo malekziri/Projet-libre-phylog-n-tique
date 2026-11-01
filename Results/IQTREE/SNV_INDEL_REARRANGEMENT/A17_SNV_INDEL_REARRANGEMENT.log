@@ -1,0 +1,179 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -s Data/processed/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.nex -st BIN -keep-ident -m MFP -o Normal -B 1000 -T 1 -seed 2026 --prefix Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:18:05 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 6 sequences with 1305 columns, 22 distinct patterns
+130 parsimony-informative, 1174 singleton sites, 1 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.09673e-05 secs using 82.06% CPU
+   1  A17-A     0.00%    failed      0.00%
+   2  A17-C     0.00%    failed      0.00%
+   3  A17-D     0.00%    failed      0.00%
+   4  A17-E     0.00%    failed      0.00%
+   5  A17-F     0.00%    failed      0.00%
+   6  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  6 sequences failed composition chi2 test (p-value<5%; df=1)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.001 seconds, parsimony score: 1354 (based on 1304 sites)
+Perform fast likelihood tree search using GTR2+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3623.284
+Optimal log-likelihood: -3622.842
+State frequencies:  0: 0.543  1: 0.457
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 998.608
+Parameters optimization took 1 rounds (0.000 sec)
+Time for fast ML tree search: 0.002 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 44 binary models (sample size: 1305 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR2+FO       3622.807     10  7265.614     7265.784     7317.354
+  2  GTR2+FO+I     3622.808     11  7267.616     7267.821     7324.530
+  3  GTR2+FO+G4    3622.811     11  7267.622     7267.826     7324.536
+  4  GTR2+FO+I+G4  3622.811     12  7269.622     7269.863     7331.709
+  5  GTR2+FO+R2    3622.810     12  7269.619     7269.861     7331.707
+  6  GTR2+FO+R3    3622.808     14  7273.617     7273.943     7346.052
+ 14  GTR2+FO+I+R2  3622.810     13  7271.619     7271.901     7338.881
+ 15  GTR2+FO+I+R3  3622.808     15  7275.617     7275.989     7353.226
+ 23  JC2+FQ        3632.838     9   7283.677     7283.816     7330.242
+ 24  JC2+FQ+I      3632.840     10  7285.679     7285.849     7337.419
+ 25  JC2+FQ+G4     3632.856     10  7285.713     7285.883     7337.453
+Akaike Information Criterion:           GTR2+FO
+Corrected Akaike Information Criterion: GTR2+FO
+Bayesian Information Criterion:         GTR2+FO
+Best-fit model: GTR2+FO chosen according to BIC
+
+All model information printed to Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.model.gz
+CPU time for ModelFinder: 0.013 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.015 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 2026)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3623.390
+2. Current log-likelihood: -3622.807
+Optimal log-likelihood: -3622.807
+State frequencies:  0: 0.541  1: 0.459
+Parameters optimization took 2 rounds (0.000 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 2.59876e-05 secs using 92.35% CPU
+Computing ML distances took 0.000071 sec (of wall-clock time) 0.000045 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 1.28746e-05 secs using 85.44% CPU
+Computing RapidNJ tree took 0.000052 sec (of wall-clock time) 0.000037 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3622.807
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.073 second
+Computing log-likelihood of 13 initial trees ... 0.001 seconds
+Current best score: -3622.807
+
+Do NNI search on 15 best initial trees
+UPDATE BEST LOG-LIKELIHOOD: -3622.807
+Iteration 10 / LogL: -3622.807 / Time: 0h:0m:0s
+Finish initializing candidate tree set (16)
+Current best tree score: -3622.807 / CPU time: 0.087
+Number of iterations: 15
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 20 / LogL: -3622.807 / Time: 0h:0m:0s
+UPDATE BEST LOG-LIKELIHOOD: -3622.807
+UPDATE BEST LOG-LIKELIHOOD: -3622.807
+Iteration 30 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3629.015
+Iteration 60 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -3622.807
+UPDATE BEST LOG-LIKELIHOOD: -3622.807
+Iteration 90 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3629.015
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.987
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 120 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 130 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 140 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 150 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3629.015
+Iteration 160 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 170 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 180 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 190 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 200 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3628.938
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 220 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 230 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 240 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 250 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3628.938
+Iteration 260 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 270 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 280 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 290 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 300 / LogL: -3622.807 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3628.938
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 300 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3622.807
+Optimal log-likelihood: -3622.807
+State frequencies:  0: 0.541  1: 0.459
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -3622.807
+Creating bootstrap support values...
+Split supports printed to NEXUS file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.splits.nex
+Total tree length: 10.458
+
+Total number of iterations: 300
+CPU time used for tree search: 0.869 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.934 sec (0h:0m:0s)
+Total CPU time used: 0.903 sec (0h:0m:0s)
+Total wall-clock time used: 0.972 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.splits.nex...
+6 taxa and 19 splits.
+Consensus tree written to Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.contree
+Reading input trees file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.contree
+Log-likelihood of consensus tree: -3622.807
+
+Analysis results written to: 
+  IQ-TREE report:                Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.treefile
+  Likelihood distances:          Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.splits.nex
+  Consensus tree:                Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.contree
+  Screen log file:               Results/IQTREE/SNV_INDEL_REARRANGEMENT/A17_SNV_INDEL_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:18:06 2026

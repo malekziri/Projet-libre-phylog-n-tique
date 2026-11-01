@@ -1,0 +1,107 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -te Results/IQTREE/REARRANGEMENT/A24_REARRANGEMENT.treefile -s Data/processed/REARRANGEMENT/A24_REARRANGEMENT.nex -st BIN -m GTR2+FO+ASC+R2 --scfl 100 -T 1 -seed 2026 --prefix Results/SCF/REARRANGEMENT/A24_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:26:05 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/REARRANGEMENT/A24_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 5 sequences with 451 columns, 13 distinct patterns
+70 parsimony-informative, 381 singleton sites, 0 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.40667e-05 secs using 71.09% CPU
+   1  A24-A     0.00%    failed      0.00%
+   2  A24-C     0.00%    failed      0.00%
+   3  A24-D     0.00%    failed      0.00%
+   4  A24-E     0.00%    failed      0.08%
+   5  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  5 sequences failed composition chi2 test (p-value<5%; df=1)
+Reading input tree file Results/IQTREE/REARRANGEMENT/A24_REARRANGEMENT.treefile ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1114.323
+2. Current log-likelihood: -986.289
+3. Current log-likelihood: -979.120
+4. Current log-likelihood: -973.861
+5. Current log-likelihood: -969.960
+6. Current log-likelihood: -966.892
+7. Current log-likelihood: -964.142
+8. Current log-likelihood: -961.192
+9. Current log-likelihood: -957.593
+10. Current log-likelihood: -953.072
+11. Current log-likelihood: -948.135
+12. Current log-likelihood: -943.600
+13. Current log-likelihood: -940.051
+14. Current log-likelihood: -937.835
+15. Current log-likelihood: -936.546
+16. Current log-likelihood: -935.748
+17. Current log-likelihood: -935.208
+18. Current log-likelihood: -934.817
+19. Current log-likelihood: -934.513
+20. Current log-likelihood: -934.268
+21. Current log-likelihood: -934.067
+22. Current log-likelihood: -933.899
+23. Current log-likelihood: -933.757
+24. Current log-likelihood: -933.636
+25. Current log-likelihood: -933.532
+26. Current log-likelihood: -933.451
+27. Current log-likelihood: -933.370
+28. Current log-likelihood: -933.299
+29. Current log-likelihood: -933.250
+30. Current log-likelihood: -933.182
+31. Current log-likelihood: -933.117
+32. Current log-likelihood: -933.052
+33. Current log-likelihood: -932.989
+34. Current log-likelihood: -932.926
+35. Current log-likelihood: -932.867
+36. Current log-likelihood: -932.810
+37. Current log-likelihood: -932.756
+38. Current log-likelihood: -932.705
+39. Current log-likelihood: -932.657
+40. Current log-likelihood: -932.636
+41. Current log-likelihood: -932.590
+42. Current log-likelihood: -932.573
+43. Current log-likelihood: -932.529
+44. Current log-likelihood: -932.513
+45. Current log-likelihood: -932.472
+46. Current log-likelihood: -932.458
+47. Current log-likelihood: -932.420
+48. Current log-likelihood: -932.408
+49. Current log-likelihood: -932.397
+50. Current log-likelihood: -932.386
+51. Current log-likelihood: -932.375
+52. Current log-likelihood: -932.365
+53. Current log-likelihood: -932.355
+Optimal log-likelihood: -932.336
+State frequencies:  0: 0.981  1: 0.019
+Site proportion and rates:  (0.871,0.124) (0.129,6.914)
+Parameters optimization took 53 rounds (0.010 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -932.336
+Total tree length: 0.346
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.017 sec (0h:0m:0s)
+Total wall-clock time used: 0.019 sec (0h:0m:0s)
+Computing site concordance factor using likelihood...
+0.000 sec
+Tree with site concordance factors written to Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.cf.tree
+Annotated tree (best viewed in FigTree) written to Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.cf.tree.nex
+Tree with branch IDs written to Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.cf.branch
+Concordance factors per branch printed to Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.cf.stat
+
+Analysis results written to: 
+  IQ-TREE report:                Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.treefile
+  Screen log file:               Results/SCF/REARRANGEMENT/A24_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:26:05 2026

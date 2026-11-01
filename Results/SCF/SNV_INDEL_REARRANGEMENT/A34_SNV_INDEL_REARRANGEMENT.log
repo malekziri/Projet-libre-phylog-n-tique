@@ -1,0 +1,153 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -te Results/IQTREE/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.treefile -s Data/processed/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.nex -st BIN -m GTR2+FO+ASC+R2 --scfl 100 -T 1 -seed 2026 --prefix Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:26:06 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 5 sequences with 990 columns, 13 distinct patterns
+426 parsimony-informative, 564 singleton sites, 0 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.40667e-05 secs using 78.2% CPU
+   1  A34-A     0.00%    failed      0.00%
+   2  A34-C     0.00%    failed      0.00%
+   3  A34-D     0.00%    failed      0.00%
+   4  A34-E     0.00%    failed      0.00%
+   5  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  5 sequences failed composition chi2 test (p-value<5%; df=1)
+Reading input tree file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.treefile ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2876.082
+2. Current log-likelihood: -2546.198
+3. Current log-likelihood: -2538.594
+4. Current log-likelihood: -2531.137
+5. Current log-likelihood: -2522.609
+6. Current log-likelihood: -2512.118
+7. Current log-likelihood: -2498.517
+8. Current log-likelihood: -2481.896
+9. Current log-likelihood: -2467.616
+10. Current log-likelihood: -2459.364
+11. Current log-likelihood: -2450.728
+12. Current log-likelihood: -2440.179
+13. Current log-likelihood: -2426.138
+14. Current log-likelihood: -2410.010
+15. Current log-likelihood: -2399.047
+16. Current log-likelihood: -2391.867
+17. Current log-likelihood: -2387.127
+18. Current log-likelihood: -2383.635
+19. Current log-likelihood: -2380.890
+20. Current log-likelihood: -2378.660
+21. Current log-likelihood: -2376.809
+22. Current log-likelihood: -2375.250
+23. Current log-likelihood: -2373.920
+24. Current log-likelihood: -2372.786
+25. Current log-likelihood: -2371.792
+26. Current log-likelihood: -2370.929
+27. Current log-likelihood: -2370.169
+28. Current log-likelihood: -2369.504
+29. Current log-likelihood: -2368.917
+30. Current log-likelihood: -2368.397
+31. Current log-likelihood: -2367.934
+32. Current log-likelihood: -2367.522
+33. Current log-likelihood: -2367.154
+34. Current log-likelihood: -2366.824
+35. Current log-likelihood: -2366.529
+36. Current log-likelihood: -2366.264
+37. Current log-likelihood: -2366.027
+38. Current log-likelihood: -2365.814
+39. Current log-likelihood: -2365.623
+40. Current log-likelihood: -2365.452
+41. Current log-likelihood: -2365.295
+42. Current log-likelihood: -2365.155
+43. Current log-likelihood: -2365.029
+44. Current log-likelihood: -2364.913
+45. Current log-likelihood: -2364.808
+46. Current log-likelihood: -2364.711
+47. Current log-likelihood: -2364.622
+48. Current log-likelihood: -2364.539
+49. Current log-likelihood: -2364.459
+50. Current log-likelihood: -2364.387
+51. Current log-likelihood: -2364.321
+52. Current log-likelihood: -2364.258
+53. Current log-likelihood: -2364.199
+54. Current log-likelihood: -2364.143
+55. Current log-likelihood: -2364.090
+56. Current log-likelihood: -2364.040
+57. Current log-likelihood: -2363.993
+58. Current log-likelihood: -2363.949
+59. Current log-likelihood: -2363.909
+60. Current log-likelihood: -2363.868
+61. Current log-likelihood: -2363.830
+62. Current log-likelihood: -2363.793
+63. Current log-likelihood: -2363.759
+64. Current log-likelihood: -2363.728
+65. Current log-likelihood: -2363.696
+66. Current log-likelihood: -2363.666
+67. Current log-likelihood: -2363.637
+68. Current log-likelihood: -2363.610
+69. Current log-likelihood: -2363.583
+70. Current log-likelihood: -2363.558
+71. Current log-likelihood: -2363.534
+72. Current log-likelihood: -2363.510
+73. Current log-likelihood: -2363.488
+74. Current log-likelihood: -2363.466
+75. Current log-likelihood: -2363.444
+76. Current log-likelihood: -2363.424
+77. Current log-likelihood: -2363.404
+78. Current log-likelihood: -2363.385
+79. Current log-likelihood: -2363.367
+80. Current log-likelihood: -2363.349
+81. Current log-likelihood: -2363.332
+82. Current log-likelihood: -2363.316
+83. Current log-likelihood: -2363.300
+84. Current log-likelihood: -2363.284
+85. Current log-likelihood: -2363.269
+86. Current log-likelihood: -2363.254
+87. Current log-likelihood: -2363.240
+88. Current log-likelihood: -2363.227
+89. Current log-likelihood: -2363.213
+90. Current log-likelihood: -2363.200
+91. Current log-likelihood: -2363.188
+92. Current log-likelihood: -2363.176
+93. Current log-likelihood: -2363.164
+94. Current log-likelihood: -2363.152
+95. Current log-likelihood: -2363.141
+96. Current log-likelihood: -2363.130
+97. Current log-likelihood: -2363.119
+98. Current log-likelihood: -2363.109
+99. Current log-likelihood: -2363.099
+Optimal log-likelihood: -2363.099
+State frequencies:  0: 0.980  1: 0.020
+Site proportion and rates:  (0.928,0.027) (0.072,13.566)
+Parameters optimization took 99 rounds (0.020 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -2363.099
+Total tree length: 0.237
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.027 sec (0h:0m:0s)
+Total wall-clock time used: 0.029 sec (0h:0m:0s)
+Computing site concordance factor using likelihood...
+0.000 sec
+Tree with site concordance factors written to Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.cf.tree
+Annotated tree (best viewed in FigTree) written to Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.cf.tree.nex
+Tree with branch IDs written to Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.cf.branch
+Concordance factors per branch printed to Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.cf.stat
+
+Analysis results written to: 
+  IQ-TREE report:                Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.treefile
+  Screen log file:               Results/SCF/SNV_INDEL_REARRANGEMENT/A34_SNV_INDEL_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:26:06 2026

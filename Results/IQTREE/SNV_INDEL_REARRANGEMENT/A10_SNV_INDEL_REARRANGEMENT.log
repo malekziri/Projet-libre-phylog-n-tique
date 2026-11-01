@@ -1,0 +1,261 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -s Data/processed/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.nex -st BIN -keep-ident -m MFP -o Normal -B 1000 -T 1 -seed 2026 --prefix Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:18:04 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 5 sequences with 1009 columns, 14 distinct patterns
+318 parsimony-informative, 690 singleton sites, 1 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.81198e-05 secs using 71.74% CPU
+   1  A10-A     0.00%    failed      0.09%
+   2  A10-C     0.00%    failed      0.00%
+   3  A10-D     0.00%    failed      0.00%
+   4  A10-E     0.00%    failed      0.01%
+   5  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  5 sequences failed composition chi2 test (p-value<5%; df=1)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.000 seconds, parsimony score: 1056 (based on 1008 sites)
+Perform fast likelihood tree search using GTR2+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3046.182
+2. Current log-likelihood: -3043.356
+Optimal log-likelihood: -3042.803
+State frequencies:  0: 0.608  1: 0.392
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 10.999
+Parameters optimization took 2 rounds (0.000 sec)
+Time for fast ML tree search: 0.002 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 44 binary models (sample size: 1009 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR2+FO       3042.785     8   6101.571     6101.715     6140.904
+  2  GTR2+FO+I     3042.750     9   6103.499     6103.680     6147.750
+  3  GTR2+FO+G4    3042.422     9   6102.845     6103.025     6147.095
+  4  GTR2+FO+I+G4  3042.383     10  6104.767     6104.987     6153.934
+  5  GTR2+FO+R2    3042.207     10  6104.413     6104.634     6153.581
+  6  GTR2+FO+R3    3040.365     12  6104.729     6105.043     6163.730
+ 14  GTR2+FO+I+R2  3042.198     11  6106.396     6106.661     6160.480
+ 15  GTR2+FO+I+R3  3039.974     13  6105.949     6106.314     6169.866
+ 23  JC2+FQ        3109.482     7   6232.964     6233.076     6267.381
+ 24  JC2+FQ+I      3109.478     8   6234.956     6235.100     6274.289
+ 25  JC2+FQ+G4     3109.514     8   6235.029     6235.173     6274.362
+Akaike Information Criterion:           GTR2+FO
+Corrected Akaike Information Criterion: GTR2+FO
+Bayesian Information Criterion:         GTR2+FO
+Best-fit model: GTR2+FO chosen according to BIC
+
+All model information printed to Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.model.gz
+CPU time for ModelFinder: 0.023 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.030 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 2026)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3053.344
+2. Current log-likelihood: -3043.185
+3. Current log-likelihood: -3042.849
+Optimal log-likelihood: -3042.789
+State frequencies:  0: 0.604  1: 0.396
+Parameters optimization took 3 rounds (0.000 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 2.09808e-05 secs using 90.56% CPU
+Computing ML distances took 0.000057 sec (of wall-clock time) 0.000039 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 1.28746e-05 secs using 85.44% CPU
+Computing RapidNJ tree took 0.000052 sec (of wall-clock time) 0.000036 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3042.738
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.016 second
+Computing log-likelihood of 3 initial trees ... 0.000 seconds
+Current best score: -3042.738
+
+Do NNI search on 5 best initial trees
+UPDATE BEST LOG-LIKELIHOOD: -3042.738
+Finish initializing candidate tree set (5)
+Current best tree score: -3042.738 / CPU time: 0.022
+Number of iterations: 5
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -3042.738
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.738
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 10 / LogL: -3042.993 / Time: 0h:0m:0s
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 20 / LogL: -3042.737 / Time: 0h:0m:0s
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 30 / LogL: -3042.760 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 40 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 50 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.055
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 60 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 70 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 80 / LogL: -3042.739 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 90 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 100 / LogL: -3042.839 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.650
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.985
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+Iteration 110 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -3042.737
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 120 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 130 / LogL: -3042.739 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 140 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 150 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.025
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 160 / LogL: -3042.739 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 170 / LogL: -3042.990 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 180 / LogL: -3042.990 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 190 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 200 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.000
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.971
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 210 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 220 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 230 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 240 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 250 / LogL: -3042.739 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.000
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 260 / LogL: -3045.697 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 270 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 280 / LogL: -3042.747 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 290 / LogL: -3042.990 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 300 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.025
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.984
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 310 / LogL: -3042.990 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 320 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 330 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 340 / LogL: -3042.747 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 350 / LogL: -3042.737 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.000
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 360 / LogL: -3042.990 / Time: 0h:0m:0s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 370 / LogL: -3042.737 / Time: 0h:0m:1s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 380 / LogL: -3042.737 / Time: 0h:0m:1s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 390 / LogL: -3042.737 / Time: 0h:0m:1s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+WARNING: NNI search needs unusual large number of steps (5) to converge!
+Iteration 400 / LogL: -3042.747 / Time: 0h:0m:1s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3047.000
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+TREE SEARCH COMPLETED AFTER 400 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3042.737
+Optimal log-likelihood: -3042.736
+State frequencies:  0: 0.605  1: 0.395
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -3042.736
+Creating bootstrap support values...
+Split supports printed to NEXUS file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.splits.nex
+Total tree length: 11.192
+
+Total number of iterations: 400
+CPU time used for tree search: 1.020 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.053 sec (0h:0m:1s)
+Total CPU time used: 1.060 sec (0h:0m:1s)
+Total wall-clock time used: 1.102 sec (0h:0m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.splits.nex...
+5 taxa and 11 splits.
+Consensus tree written to Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.contree
+Reading input trees file Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.contree
+Log-likelihood of consensus tree: -3042.737
+
+Analysis results written to: 
+  IQ-TREE report:                Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.treefile
+  Likelihood distances:          Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.splits.nex
+  Consensus tree:                Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.contree
+  Screen log file:               Results/IQTREE/SNV_INDEL_REARRANGEMENT/A10_SNV_INDEL_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:18:05 2026

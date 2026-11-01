@@ -1,0 +1,290 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -s Data/processed/REARRANGEMENT/A21_REARRANGEMENT.nex -st BIN -keep-ident -m MFP -o Normal -B 1000 -T 1 -seed 2026 --prefix Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:18:02 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/REARRANGEMENT/A21_REARRANGEMENT.nex ... Nexus format detected
+Alignment has 10 sequences with 902 columns, 44 distinct patterns
+187 parsimony-informative, 715 singleton sites, 0 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.19209e-05 secs using 75.5% CPU
+   1  A21-A     0.00%    failed      2.70%
+   2  A21-C     0.00%    failed      0.00%
+   3  A21-D     0.00%    failed      0.90%
+   4  A21-E     0.00%    failed      0.00%
+   5  A21-F     0.00%    failed      0.00%
+   6  A21-G     0.00%    failed      0.00%
+   7  A21-H     0.00%    failed      0.00%
+   8  A21-I     0.00%    passed     25.18%
+   9  A21-J     0.00%    passed     41.63%
+  10  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  8 sequences failed composition chi2 test (p-value<5%; df=1)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.000 seconds, parsimony score: 962 (based on 902 sites)
+Perform fast likelihood tree search using GTR2+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2636.387
+2. Current log-likelihood: -2633.995
+3. Current log-likelihood: -2631.581
+4. Current log-likelihood: -2630.094
+5. Current log-likelihood: -2628.862
+6. Current log-likelihood: -2627.849
+Optimal log-likelihood: -2626.391
+State frequencies:  0: 0.912  1: 0.088
+Gamma shape alpha: 1.667
+Parameters optimization took 6 rounds (0.003 sec)
+Time for fast ML tree search: 0.010 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 44 binary models (sample size: 902 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR2+FO       3166.491     18  6368.982     6369.757     6455.465
+  2  GTR2+FO+ASC   2632.252     18  5300.503     5301.278     5386.986
+  3  GTR2+FO+G4    3166.511     19  6371.022     6371.884     6462.310
+  4  GTR2+FO+ASC+G4 2501.962     19  5041.925     5042.786     5133.212
+  5  GTR2+FO+R2    3166.511     20  6373.022     6373.976     6469.115
+  6  GTR2+FO+R3    3166.499     22  6376.998     6378.149     6482.699
+ 14  GTR2+FO+ASC+R2 2493.756     20  5027.512     5028.466     5123.605
+ 15  GTR2+FO+ASC+R3 2480.549     22  5005.098     5006.249     5110.799
+ 16  GTR2+FO+ASC+R4 2478.942     24  5005.884     5007.253     5121.195
+ 23  JC2+FQ        3218.179     17  6470.357     6471.050     6552.036
+ 24  JC2+FQ+ASC    2685.216     17  5404.431     5405.124     5486.110
+ 25  JC2+FQ+G4     3218.248     18  6472.495     6473.270     6558.978
+ 26  JC2+FQ+ASC+G4 2683.048     18  5402.096     5402.871     5488.580
+ 36  JC2+FQ+ASC+R2 2664.532     19  5367.064     5367.926     5458.352
+ 37  JC2+FQ+ASC+R3 2664.578     21  5371.156     5372.206     5472.053
+Akaike Information Criterion:           GTR2+FO+ASC+R3
+Corrected Akaike Information Criterion: GTR2+FO+ASC+R3
+Bayesian Information Criterion:         GTR2+FO+ASC+R3
+Best-fit model: GTR2+FO+ASC+R3 chosen according to BIC
+
+All model information printed to Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.model.gz
+CPU time for ModelFinder: 0.141 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.149 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 2026)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2637.010
+2. Current log-likelihood: -2609.819
+3. Current log-likelihood: -2608.377
+4. Current log-likelihood: -2601.636
+5. Current log-likelihood: -2593.623
+6. Current log-likelihood: -2584.701
+7. Current log-likelihood: -2559.940
+8. Current log-likelihood: -2546.145
+9. Current log-likelihood: -2537.308
+10. Current log-likelihood: -2530.255
+11. Current log-likelihood: -2524.146
+12. Current log-likelihood: -2518.708
+13. Current log-likelihood: -2513.648
+14. Current log-likelihood: -2509.515
+15. Current log-likelihood: -2506.338
+16. Current log-likelihood: -2503.365
+17. Current log-likelihood: -2501.157
+18. Current log-likelihood: -2499.324
+19. Current log-likelihood: -2497.941
+20. Current log-likelihood: -2496.764
+21. Current log-likelihood: -2495.725
+22. Current log-likelihood: -2494.767
+23. Current log-likelihood: -2493.893
+24. Current log-likelihood: -2492.983
+25. Current log-likelihood: -2491.943
+26. Current log-likelihood: -2490.672
+27. Current log-likelihood: -2488.855
+28. Current log-likelihood: -2487.515
+29. Current log-likelihood: -2487.044
+30. Current log-likelihood: -2486.668
+31. Current log-likelihood: -2486.285
+32. Current log-likelihood: -2485.967
+33. Current log-likelihood: -2485.653
+34. Current log-likelihood: -2485.370
+35. Current log-likelihood: -2485.089
+36. Current log-likelihood: -2484.846
+37. Current log-likelihood: -2484.596
+38. Current log-likelihood: -2484.381
+39. Current log-likelihood: -2484.165
+40. Current log-likelihood: -2483.977
+41. Current log-likelihood: -2483.789
+42. Current log-likelihood: -2483.611
+43. Current log-likelihood: -2483.447
+44. Current log-likelihood: -2483.303
+45. Current log-likelihood: -2483.148
+46. Current log-likelihood: -2483.013
+47. Current log-likelihood: -2482.890
+48. Current log-likelihood: -2482.767
+49. Current log-likelihood: -2482.652
+50. Current log-likelihood: -2482.547
+Optimal log-likelihood: -2482.416
+State frequencies:  0: 0.986  1: 0.014
+Site proportion and rates:  (0.980,0.013) (0.012,10.284) (0.009,101.642)
+Parameters optimization took 50 rounds (0.033 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 9.89437e-05 secs using 97.02% CPU
+Computing ML distances took 0.000137 sec (of wall-clock time) 0.000123 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 1.62125e-05 secs using 80.19% CPU
+Computing RapidNJ tree took 0.000059 sec (of wall-clock time) 0.000046 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2629.688
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.041 second
+Computing log-likelihood of 89 initial trees ... 0.020 seconds
+Current best score: -2482.416
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2466.337
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+Iteration 10 / LogL: -2547.768 / Time: 0h:0m:0s
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+Iteration 20 / LogL: -2544.420 / Time: 0h:0m:0s
+Finish initializing candidate tree set (5)
+Current best tree score: -2466.337 / CPU time: 0.207
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+WARNING: NNI search needs unusual large number of steps (10) to converge!
+Iteration 30 / LogL: -2536.995 / Time: 0h:0m:0s (0h:0m:0s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -2466.180
+UPDATE BEST LOG-LIKELIHOOD: -2466.176
+Iteration 40 / LogL: -2466.176 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -2466.219 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2487.555
+Iteration 60 / LogL: -2468.638 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -2466.202 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -2536.900 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -2466.174
+Iteration 90 / LogL: -2468.147 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -2467.610 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2485.503
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2466.174
+2. Current log-likelihood: -2466.096
+3. Current log-likelihood: -2466.004
+4. Current log-likelihood: -2465.918
+5. Current log-likelihood: -2465.838
+6. Current log-likelihood: -2465.736
+7. Current log-likelihood: -2465.660
+8. Current log-likelihood: -2465.574
+9. Current log-likelihood: -2465.487
+10. Current log-likelihood: -2465.419
+11. Current log-likelihood: -2465.356
+12. Current log-likelihood: -2465.284
+13. Current log-likelihood: -2465.191
+14. Current log-likelihood: -2465.131
+15. Current log-likelihood: -2465.076
+16. Current log-likelihood: -2465.007
+17. Current log-likelihood: -2464.956
+18. Current log-likelihood: -2464.895
+19. Current log-likelihood: -2464.849
+20. Current log-likelihood: -2464.781
+21. Current log-likelihood: -2464.699
+22. Current log-likelihood: -2464.653
+23. Current log-likelihood: -2464.611
+24. Current log-likelihood: -2464.573
+25. Current log-likelihood: -2464.503
+26. Current log-likelihood: -2464.464
+27. Current log-likelihood: -2464.430
+28. Current log-likelihood: -2464.402
+29. Current log-likelihood: -2464.348
+30. Current log-likelihood: -2464.300
+31. Current log-likelihood: -2464.270
+32. Current log-likelihood: -2464.245
+33. Current log-likelihood: -2464.223
+34. Current log-likelihood: -2464.184
+35. Current log-likelihood: -2464.161
+36. Current log-likelihood: -2464.139
+37. Current log-likelihood: -2464.121
+38. Current log-likelihood: -2464.103
+39. Current log-likelihood: -2464.065
+40. Current log-likelihood: -2464.044
+41. Current log-likelihood: -2463.999
+42. Current log-likelihood: -2463.979
+43. Current log-likelihood: -2463.961
+44. Current log-likelihood: -2463.945
+45. Current log-likelihood: -2463.928
+46. Current log-likelihood: -2463.913
+47. Current log-likelihood: -2463.899
+48. Current log-likelihood: -2463.884
+49. Current log-likelihood: -2463.871
+50. Current log-likelihood: -2463.858
+51. Current log-likelihood: -2463.845
+52. Current log-likelihood: -2463.811
+53. Current log-likelihood: -2463.796
+54. Current log-likelihood: -2463.783
+55. Current log-likelihood: -2463.770
+56. Current log-likelihood: -2463.757
+57. Current log-likelihood: -2463.744
+58. Current log-likelihood: -2463.732
+59. Current log-likelihood: -2463.721
+60. Current log-likelihood: -2463.709
+61. Current log-likelihood: -2463.698
+62. Current log-likelihood: -2463.687
+63. Current log-likelihood: -2463.677
+64. Current log-likelihood: -2463.666
+65. Current log-likelihood: -2463.637
+66. Current log-likelihood: -2463.624
+67. Current log-likelihood: -2463.613
+68. Current log-likelihood: -2463.603
+69. Current log-likelihood: -2463.592
+Optimal log-likelihood: -2463.578
+State frequencies:  0: 0.992  1: 0.008
+Site proportion and rates:  (0.925,0.004) (0.045,2.557) (0.030,29.788)
+Parameters optimization took 69 rounds (0.031 sec)
+BEST SCORE FOUND : -2463.578
+Creating bootstrap support values...
+Split supports printed to NEXUS file Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.splits.nex
+Total tree length: 0.603
+
+Total number of iterations: 102
+CPU time used for tree search: 0.572 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.585 sec (0h:0m:0s)
+Total CPU time used: 0.803 sec (0h:0m:0s)
+Total wall-clock time used: 0.834 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.splits.nex...
+10 taxa and 51 splits.
+Consensus tree written to Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.contree
+Reading input trees file Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.contree
+Log-likelihood of consensus tree: -2524.580
+
+Analysis results written to: 
+  IQ-TREE report:                Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.iqtree
+  Maximum-likelihood tree:       Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.treefile
+  Likelihood distances:          Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.splits.nex
+  Consensus tree:                Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.contree
+  Screen log file:               Results/IQTREE/REARRANGEMENT/A21_REARRANGEMENT.log
+
+Date and Time: Sun Nov  1 20:18:03 2026

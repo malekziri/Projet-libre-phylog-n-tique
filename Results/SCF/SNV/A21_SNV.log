@@ -1,0 +1,61 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Mar  8 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBook-Air-de-Malek.local (SSE4.2, 8 GB RAM)
+Command: /Users/malekziri/Documents/M2_Bioinformatique/BQ4CE075_Bioinformatique_des_omiques_et_de_la_métagénomique/Phylogénétique/tools/iqtree-2.4.0-macOS/bin/iqtree2 -te Results/IQTREE/SNV/A21_SNV.treefile -s Data/processed/SNV/A21_SNV.nex -st BIN -m GTR2+FO --scfl 100 -T 1 -seed 2026 --prefix Results/SCF/SNV/A21_SNV
+Seed:    2026 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  1 20:26:05 2026
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Data/processed/SNV/A21_SNV.nex ... Nexus format detected
+Alignment has 10 sequences with 91 columns, 18 distinct patterns
+20 parsimony-informative, 69 singleton sites, 2 constant sites
+        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.28746e-05 secs using 69.91% CPU
+   1  A21-A     0.00%    passed     52.63%
+   2  A21-C     0.00%    passed     13.93%
+   3  A21-D     0.00%    passed     13.93%
+   4  A21-E     0.00%    passed      9.11%
+   5  A21-F     0.00%    passed     39.82%
+   6  A21-G     0.00%    passed      5.73%
+   7  A21-H     0.00%    passed     20.51%
+   8  A21-I     0.00%    passed     83.27%
+   9  A21-J     0.00%    passed     20.51%
+  10  Normal    0.00%    failed      0.00%
+****  TOTAL     0.00%  1 sequences failed composition chi2 test (p-value<5%; df=1)
+Reading input tree file Results/IQTREE/SNV/A21_SNV.treefile ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -324.147
+2. Current log-likelihood: -315.749
+3. Current log-likelihood: -314.325
+Optimal log-likelihood: -314.322
+State frequencies:  0: 0.583  1: 0.417
+Parameters optimization took 3 rounds (0.001 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -314.322
+Total tree length: 9.120
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.006 sec (0h:0m:0s)
+Total wall-clock time used: 0.007 sec (0h:0m:0s)
+Computing site concordance factor using likelihood...
+0.000 sec
+Tree with site concordance factors written to Results/SCF/SNV/A21_SNV.cf.tree
+Annotated tree (best viewed in FigTree) written to Results/SCF/SNV/A21_SNV.cf.tree.nex
+Tree with branch IDs written to Results/SCF/SNV/A21_SNV.cf.branch
+Concordance factors per branch printed to Results/SCF/SNV/A21_SNV.cf.stat
+
+Analysis results written to: 
+  IQ-TREE report:                Results/SCF/SNV/A21_SNV.iqtree
+  Maximum-likelihood tree:       Results/SCF/SNV/A21_SNV.treefile
+  Screen log file:               Results/SCF/SNV/A21_SNV.log
+
+Date and Time: Sun Nov  1 20:26:05 2026

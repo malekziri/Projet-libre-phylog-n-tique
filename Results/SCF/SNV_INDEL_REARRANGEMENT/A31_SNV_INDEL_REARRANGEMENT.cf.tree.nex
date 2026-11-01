@@ -1,0 +1,5 @@
+#NEXUS
+[ See Results/SCF/SNV_INDEL_REARRANGEMENT/A31_SNV_INDEL_REARRANGEMENT.cf.stat for branch annotation meanings. This file is best viewed in FigTree. ]
+begin trees;
+  tree tree_1 = (A31-A:0.0187360005,(((A31-C:0.5186624146,A31-D:0.0176558372):0.0045563991[&label="59",sCF="49.7",sCF/sDF1/sDF2="49.7/34/16.3",sCF_N="3.05",sCF_N/sDF1_N/sDF2_N="3.05/2/1.04",sDF1="34",sDF1_N="2",sDF2="16.3",sDF2_N="1.04",sN="6.09"],A31-E:0.0400471367):0.0063650001[&label="30",sCF="14.82",sCF/sDF1/sDF2="14.82/44.12/41.05",sCF_N="0.97",sCF_N/sDF1_N/sDF2_N="0.97/4.56/2.57",sDF1="44.12",sDF1_N="4.56",sDF2="41.05",sDF2_N="2.57",sN="8.1"],Normal:10.0000000000):0.0000025500[&sCF="57.37",sCF/sDF1/sDF2="57.37/39.06/3.57",sCF_N="4.3",sCF_N/sDF1_N/sDF2_N="4.3/2.8/0.27",sDF1="39.06",sDF1_N="2.8",sDF2="3.57",sDF2_N="0.27",sN="7.37"],A31-F:0.0188243028);
+end;

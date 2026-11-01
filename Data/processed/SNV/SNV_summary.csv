@@ -1,0 +1,7 @@
+patient,tumor_samples,snv_count,variable_sites,informative_sites
+A10,4,101,62,21
+A17,5,208,76,13
+A21,9,91,46,18
+A24,4,65,18,0
+A31,5,65,40,5
+A34,4,333,294,63
